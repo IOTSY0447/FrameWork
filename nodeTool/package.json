@@ -1,0 +1,22 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xlsx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IOTSY0447/FrameWork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IOTSY0447/FrameWork/issues"
+  },
+  "homepage": "https://github.com/IOTSY0447/FrameWork#readme",
+  "dependencies": {
+    "node-xlsx": "^0.15.0"
+  }
+}
