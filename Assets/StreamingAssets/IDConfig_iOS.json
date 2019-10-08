@@ -1,0 +1,37 @@
+{
+    "toggle":[
+        { "name": "AppsFlyerAdvanced", "on":  false }
+        ,{ "name": "Push", "on":  true }
+    ],
+    "kv":[
+        { "key": "AppId", "value": "1469862703" }
+        ,{ "key": "IronSourceAppKey", "value":  "972f065d" }
+        ,{ "key": "AdMobAppId", "value":  "ca-app-pub-6084935777285871~7486029275" }
+        ,{ "key": "GameTime", "value":  "Turncans_Gametime" }
+        ,{ "key": "HighScore", "value":  "Turncans_Level" }
+        ,{ "key": "AppUrl", "value":  "itms-apps://itunes.apple.com/us/app/id1469862703?mt=8&action=write-review" }
+        ,{ "key": "UmengKey", "value":  "5d0a05db3fc195beef0008d7" }
+        ,{ "key": "AppsFlyerKey", "value":  "9fyVgpSXFKkx84NkNFbYsD" }
+    ],
+
+    "iap":[
+        {
+            "Key": "remove_ads"
+            ,"ID": "Turncans.Noads"
+            ,"Name": "No Ads"
+            ,"Type": "NonConsumable"
+            ,"Price": 2.99
+            ,"Currency": "USD"
+        }
+    ],
+
+    "push":[
+        {
+            "Name": "Every Day Push"
+            ,"Toggle": true
+            ,"Type": "Day"
+            ,"Date": "2019-08-20 10:40:00"
+            ,"Text": "Wellcome Back！"
+        }
+    ]
+}
