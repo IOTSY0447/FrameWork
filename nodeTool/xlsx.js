@@ -7,7 +7,7 @@ const typeIndex = 1//类型索引
 const notationIndex = 2//注释索引
 const keyIndex = 3//key索引
 const dataStart = 4 //数据从第几个开始算
-const tableUrl = path.resolve('./Assets/Resources/xlsx/configData\(关卡\).xlsx')//文件路径
+const tableUrl = path.resolve(__dirname, '../Assets/Resources/xlsx/configData\(关卡\).xlsx')//文件路径
 /**
  * 生成提示文件跟json
  */
@@ -15,6 +15,7 @@ class changTool {
     constructor() {
         let result = this.parseXlsxOne(tableUrl)
         this.writeTs(result)
+        console.log(result)
     }
     /**
      * 解析单张表
@@ -43,7 +44,7 @@ class changTool {
      * 写入代码提示
      */
     writeTs(str) {
-        fs.writeFileSync(path.resolve('./Assets/Scripts/Command/BiaoEnum.cs'), str) 
+        fs.writeFileSync(path.resolve(__dirname, '../Assets/Scripts/Command/BiaoEnum.cs'), str) 
     }
     /**
      * 生成单个分页
@@ -154,7 +155,7 @@ class loadAndCheckXlsx {
      * 生成代码
      */
     writeJson(str) {
-        fs.writeFileSync(path.resolve('./Assets/StreamingAssets/configData.json'), str)
+        fs.writeFileSync(path.resolve(__dirname,'../Assets/StreamingAssets/configData.json'), str)
     }
     /**
      * 列索引转ABC列
